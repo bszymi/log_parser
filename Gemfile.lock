@@ -45,7 +45,9 @@ GEM
     unicode-display_width (2.1.0)
 
 PLATFORMS
-  x86_64-darwin-20
+  -darwin-21
+  ruby
+  x86_64-linux
 
 DEPENDENCIES
   log_parser!
