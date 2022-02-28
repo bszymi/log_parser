@@ -3,6 +3,7 @@ Simple web server log parser
 
 ## Installation
 
+TODO: this section need changes
 Add this line to your application's Gemfile:
 
 ```ruby
