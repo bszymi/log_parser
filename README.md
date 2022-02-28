@@ -29,5 +29,4 @@ The most important:
  * Output printer class could use view file, like in RoR
  * no unit tests for FileReader
  * validation could be rethink in SimpleLineParser, maybe its not the best place for this code
- * Rubocop could have more rules
- * Add documentation into most classes
+ * Extend documentation into most classes
