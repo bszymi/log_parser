@@ -24,5 +24,4 @@ module LogParser
   # reports
   autoload :PageVisitsReport, 'log_parser/reports/page_visits_report'
   autoload :PageUniqueVisitorsReport, 'log_parser/reports/page_unique_visitors_report'
-
 end

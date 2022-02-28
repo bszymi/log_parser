@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module LogParser
+  # simple data processor implementation
   class SimpleDataProcessor
-
     # @param [Hash] pages
     def initialize(pages)
       @pages = pages

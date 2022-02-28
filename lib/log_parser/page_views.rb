@@ -3,6 +3,7 @@
 require 'set'
 
 module LogParser
+  # Holds views and unique ip addresses
   class PageViews
     attr_reader :counter, :unique_ip_addresses
 

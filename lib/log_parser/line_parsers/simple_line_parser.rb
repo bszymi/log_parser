@@ -3,6 +3,7 @@
 require 'resolv'
 
 module LogParser
+  # Implements line parser for very simple case, where line looks like "{page} {ip}"
   class SimpleLineParser
     # @param [Object] data_processor
     def initialize(data_processor)

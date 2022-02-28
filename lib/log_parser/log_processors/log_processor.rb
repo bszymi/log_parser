@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 module LogParser
+  # General log processor
+  # Require passing concrete implementations of data_processor, line_parser and data_reader classes
   class LogProcessor
     attr_reader :pages
 

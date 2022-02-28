@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module LogParser
+  # Generates page visits report
   class PageVisitsReport
     def generate_report(pages)
       data = []

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module LogParser
+  # format report, so it's ease to read
   class PrintReport
     def print(header, data, postfix, no_data_message)
       p = "#{header}\n"

@@ -3,8 +3,9 @@
 require 'optparse'
 
 module LogParser
+  # Produce command line options
+  # --file option is required and cannot be empty
   class CommandLineOptions
-
     attr_reader :command
 
     def initialize(command)

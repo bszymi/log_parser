@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module LogParser
+  # Implements Data Reader for files
   class FileReader
     def initialize(line_parsers)
       @line_parsers = line_parsers
