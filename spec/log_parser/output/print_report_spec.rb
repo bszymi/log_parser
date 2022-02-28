@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rspec'
 
 describe 'PrintReport' do
@@ -16,7 +18,7 @@ describe 'PrintReport' do
     let(:data) { {} }
 
     it 'should return string' do
-      expect(print_report.print('Visits per page', data, 'visits','No data')).to eq "Visits per page\nNo data\n"
+      expect(print_report.print('Visits per page', data, 'visits', 'No data')).to eq "Visits per page\nNo data\n"
     end
   end
 

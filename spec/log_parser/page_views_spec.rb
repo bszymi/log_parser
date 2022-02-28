@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'PageViews' do
@@ -11,7 +13,7 @@ describe 'PageViews' do
   end
 
   context 'page has views' do
-    let(:page_view)  {LogParser::PageViews.new}
+    let(:page_view) { LogParser::PageViews.new }
 
     it 'add first page view' do
       page_view.add_page_view('1.1.1.1')
