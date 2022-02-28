@@ -10,7 +10,7 @@ module LogParser
     end
 
     def parse(line)
-      matches = %r{^([/\w_\.]+)\s([\d\.]+)$}.match(line)
+      matches = %r{^([/\w_.]+)\s([\d.]+)$}.match(line)
       return false if matches.nil? #  not a log file line
       return false if (matches[2] =~ Resolv::IPv4::Regex).nil?
 

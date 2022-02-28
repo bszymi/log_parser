@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = 'Simple Log parser'
   spec.description = 'Parse web server logs from file'
   spec.homepage = 'https://github.com/bszymi/log_parser'
-  spec.required_ruby_version = '>= 2.6.0'
+  spec.required_ruby_version = '>= 2.7.0'
 
   spec.metadata['homepage_uri'] = spec.homepage
   # spec.metadata['source_code_uri'] = 'TODO: Put your gem's public repo URL here.'
