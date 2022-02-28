@@ -17,7 +17,7 @@ describe 'PageUniqueVisitorsReport' do
     let(:pages) do
       {
         'page_1' => page_1_views,
-        'page_2' => page_2_views,
+        'page_2' => page_2_views
       }
     end
 
@@ -32,7 +32,7 @@ describe 'PageUniqueVisitorsReport' do
     let(:pages) do
       {
         'page_1' => page_1_views,
-        'page_2' => page_2_views,
+        'page_2' => page_2_views
       }
     end
 
