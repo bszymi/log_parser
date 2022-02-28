@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'spec_helper'
 
 describe 'CommandLineOptions' do
@@ -15,7 +16,7 @@ describe 'CommandLineOptions' do
     let(:args) { ['--abc=x'] }
 
     it 'should rise OptionParser::InvalidOption' do
-      expect{command_line.parse_command_line(args)}.to raise_error(OptionParser::InvalidOption)
+      expect { command_line.parse_command_line(args) }.to raise_error(OptionParser::InvalidOption)
     end
   end
 
@@ -23,7 +24,7 @@ describe 'CommandLineOptions' do
     let(:args) { [] }
 
     it 'should rise OptionParser::MissingArgument' do
-      expect{command_line.parse_command_line(args)}.to raise_error(OptionParser::MissingArgument)
+      expect { command_line.parse_command_line(args) }.to raise_error(OptionParser::MissingArgument)
     end
   end
 
@@ -31,7 +32,7 @@ describe 'CommandLineOptions' do
     let(:args) { ['--file='] }
 
     it 'should rise OptionParser::MissingArgument' do
-      expect{command_line.parse_command_line(args)}.to raise_error(OptionParser::InvalidArgument)
+      expect { command_line.parse_command_line(args) }.to raise_error(OptionParser::InvalidArgument)
     end
   end
 

@@ -1,4 +1,5 @@
-require "resolv"
+# frozen_string_literal: true
+require 'resolv'
 
 module LogParser
   class SimpleLineParser
