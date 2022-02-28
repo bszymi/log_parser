@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'bundler/setup'
+require 'log_parser'
+
+begin
+  options = LogParser::CommandLineOptions.new('parse_file').parse_command_line(ARGV)
+rescue StandardError => e
+  puts e.message
+  exit 1
+end
+
+log_processor = LogParser::LogProcessor.new(
+  data_processor_class: LogParser::SimpleDataProcessor,
+  line_parser_class: LogParser::SimpleLineParser,
+  data_reader_class: LogParser::FileReader
+)
+begin
+  log_processor.process(options[:filename])
+rescue StandardError => e
+  puts e.message
+  exit 1
+end
+
+report_unique = LogParser::PageUniqueVisitorsReport.new.generate_report log_processor.pages
+print_report = LogParser::PrintReport.new
+puts "\n"
+puts print_report.print('Unique views per page', report_unique, 'unique views', 'No data')
+puts "\n"
+report_visits = LogParser::PageVisitsReport.new.generate_report log_processor.pages
+puts print_report.print('Visits per page', report_visits, 'visits', 'No data')

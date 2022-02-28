@@ -1,5 +1,5 @@
 # LogParser
-Simple web server log parser 
+Simple web server log parser
 
 ## Installation
 
@@ -19,5 +19,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    Example:
+    $ ./exe/parse_file --file=spec/fixtures/webserver_sample_1.log
 
+## Future development
+There are lots of  things that can be done better in future versions.
+The most important:
+ * when using Ruby 3, use interfaces for most classes
+ * Output printer class could use view file, like in RoR
+ * no unit tests for FileReader
+ * validation could be rethink in SimpleLineParser, maybe its not the best place for this code
+ * Rubocop could have more rules
+ * Add documentation into most classes

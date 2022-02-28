@@ -1,0 +1,8 @@
+
+Unique views per page
+/help_page/1 2 unique views
+/help 1 unique views
+
+Visits per page
+/help_page/1 3 visits
+/help 1 visits
