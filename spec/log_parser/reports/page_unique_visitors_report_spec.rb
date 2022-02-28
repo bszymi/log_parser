@@ -42,5 +42,4 @@ describe 'PageUniqueVisitorsReport' do
       expect(report.generate_report(pages)).to eq [['page_2', 2], ['page_1', 1]]
     end
   end
-
 end

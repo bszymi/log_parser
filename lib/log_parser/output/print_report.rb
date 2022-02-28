@@ -2,7 +2,6 @@
 
 module LogParser
   class PrintReport
-
     def print(header, data, postfix, no_data_message)
       p = "#{header}\n"
       if data.size.positive?
@@ -12,6 +11,5 @@ module LogParser
       end
       p
     end
-
   end
 end

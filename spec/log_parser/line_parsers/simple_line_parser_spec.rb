@@ -3,9 +3,8 @@
 require 'rspec'
 
 describe 'SimpleLineParser' do
-
   context 'parse' do
-    let(:data_processor) { double() }
+    let(:data_processor) { double }
     let(:line_parser) { LogParser::SimpleLineParser.new(data_processor) }
 
     it 'should return false if line not match' do
@@ -20,6 +19,5 @@ describe 'SimpleLineParser' do
       expect(data_processor).to receive(:process).with('abc', '1.1.1.1')
       line_parser.parse('abc 1.1.1.1')
     end
-
   end
 end

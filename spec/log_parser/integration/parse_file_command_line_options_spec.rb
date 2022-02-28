@@ -3,7 +3,6 @@
 require 'spec_helper'
 
 describe 'ParseFileCommandLineOptions' do
-
   it 'missing file option' do
     expect { system %(./exe/parse_file) }
       .to output(a_string_including('missing argument: --file'))
@@ -21,6 +20,4 @@ describe 'ParseFileCommandLineOptions' do
       .to output(a_string_including('missing argument: --file'))
       .to_stdout_from_any_process
   end
-
-
 end

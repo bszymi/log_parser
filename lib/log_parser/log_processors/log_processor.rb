@@ -2,7 +2,6 @@
 
 module LogParser
   class LogProcessor
-
     attr_reader :pages
 
     def initialize(data_processor_class:, line_parser_class:, data_reader_class:)
@@ -16,6 +15,5 @@ module LogParser
     def process(source)
       @data_reader.process(source)
     end
-
   end
 end

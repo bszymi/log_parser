@@ -3,7 +3,6 @@
 require 'rspec'
 
 describe 'SimpleDataProcessor' do
-
   context 'process empty pages' do
     let(:pages) { {} }
     let(:data_processor) { LogParser::SimpleDataProcessor.new(pages) }
@@ -14,7 +13,6 @@ describe 'SimpleDataProcessor' do
       expect(pages.size).to eq 1
       expect(pages['page_1'].counter).to eq 1
     end
-
   end
 
   context 'process when page exist' do
@@ -30,7 +28,6 @@ describe 'SimpleDataProcessor' do
       expect(@pages.size).to eq 1
       expect(@pages['page_1'].counter).to eq 2
     end
-
   end
 
   context 'process new page when pages not empty' do
@@ -47,6 +44,5 @@ describe 'SimpleDataProcessor' do
       expect(@pages['page_1'].counter).to eq 1
       expect(@pages['page_2'].counter).to eq 1
     end
-
   end
 end

@@ -42,5 +42,4 @@ describe 'PageVisitsReport' do
       expect(report.generate_report(pages)).to eq [['page_1', 6], ['page_2', 3]]
     end
   end
-
 end

@@ -3,7 +3,6 @@
 require 'spec_helper'
 
 describe 'PageViews' do
-
   context 'initialise' do
     it 'initial' do
       page_view = LogParser::PageViews.new
@@ -34,7 +33,6 @@ describe 'PageViews' do
       expect(page_view.counter).to eq 2
       expect(page_view.unique_ip_addresses).to eq Set['1.1.1.1']
     end
-
   end
 
   context 'page has 2 views' do
@@ -51,5 +49,4 @@ describe 'PageViews' do
       expect(page_view.unique_ip_addresses).to eq Set['1.1.1.1', '1.1.1.2']
     end
   end
-
 end

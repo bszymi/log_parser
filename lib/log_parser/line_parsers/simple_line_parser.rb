@@ -4,7 +4,6 @@ require 'resolv'
 
 module LogParser
   class SimpleLineParser
-
     # @param [Object] data_processor
     def initialize(data_processor)
       @data_processor = data_processor
@@ -17,6 +16,5 @@ module LogParser
 
       @data_processor.process(matches[1], matches[2])
     end
-
   end
 end

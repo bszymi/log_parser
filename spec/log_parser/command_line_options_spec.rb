@@ -36,5 +36,4 @@ describe 'CommandLineOptions' do
       expect { command_line.parse_command_line(args) }.to raise_error(OptionParser::InvalidArgument)
     end
   end
-
 end
