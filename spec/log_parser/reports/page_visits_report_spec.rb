@@ -13,7 +13,7 @@ describe 'PageVisitsReport' do
 
   context 'generate_report when no duplicate pages' do
     let(:page_1_views) { double(counter: 1, unique_ip_addresses: [1]) }
-    let(:page_2_views) { double(counter: 2, unique_ip_addresses: [1,2]) }
+    let(:page_2_views) { double(counter: 2, unique_ip_addresses: [1, 2]) }
     let(:pages) do
       {
         'page_1' => page_1_views,
@@ -28,7 +28,7 @@ describe 'PageVisitsReport' do
 
   context 'generate_report when duplicate visitors' do
     let(:page_1_views) { double(counter: 6, unique_ip_addresses: [1]) }
-    let(:page_2_views) { double(counter: 3, unique_ip_addresses: [1,2]) }
+    let(:page_2_views) { double(counter: 3, unique_ip_addresses: [1, 2]) }
     let(:pages) do
       {
         'page_1' => page_1_views,
